@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/5313213.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+        .titulo{
+            position: absolute;
+            top: -3rem;
+            left: 27rem;
+            h1{
+                font-size: 250px;
+                font-family: 'Nunito', sans-serif;
+                color: #33662e;
+                text-shadow: 1px 30px 50px black;
+            }
+ 
+            p{
+                position: relative;
+                top: -2.5rem;
+                right: 10rem;
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        ul{
+           position: absolute;
+           top: 20rem;
+            width: 100%;
+            list-style: none;
+            text-align: center;
+            li{
+               margin-top: 2rem;
+            }
+            a{
+                color: white;
+                background: #7CCC90;
+                text-decoration: none;
+                margin-bottom: 5rem;
+                padding: 20px 100px;
+                border: 4px solid #7CCC90;
+                border-radius: 25px 0px;
+                font-size: 40px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-family: 'Nunito', sans-serif;
+            }
+        }
+}
+

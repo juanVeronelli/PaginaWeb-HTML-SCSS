@@ -1,0 +1,22 @@
+/* en este archivo no uso Scss debido a la poca extension del mismo, se hace mas comodo usar directamente CSS sin compilar*/ 
+body{
+    background-color: honeydew;
+}
+.descarga{
+    width: 700px;
+    height: 500px;
+    border: 3px solid green;
+    border-radius: 25px 0px 25px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.title{
+    text-align: center;
+}
+
+.title > h1 {
+    font-size: 40px;
+}
+.title > p {
+    font-size: 20px
+}

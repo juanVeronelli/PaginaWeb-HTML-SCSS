@@ -1,0 +1,464 @@
+//variable sass
+$color-bg: #f9fbfb;
+$border:  1px solid #dee0e0;
+$border-leaf: 15px 0px;
+
+$color-primary: #000;
+$color-secundary: #7CCC90;
+
+$font-primary: 'Rubik', sans-serif;
+$box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.5);
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 200vh;
+    background: $color-bg;
+    header{
+        height: 100vh;
+        box-shadow: $box-shadow;
+        background: {
+            image: url(../assets/banner-hojas.jpg);
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+        .header_navBar{
+            display: grid; 
+            grid-template-columns: 0.3fr 0.7fr; 
+            grid-template-rows: 0.2fr; 
+            gap: 0px 0px; 
+            align-items: center; 
+            padding-top: 0.8rem;      
+            .header_Llive{
+             display: grid; 
+             grid-template-columns: 0.2fr 0.4fr; 
+             grid-template-rows: 0.2fr; 
+             gap: 0px 20px;
+             align-items: center;
+             margin-left: 3rem;
+                img{
+                    width: 80px;
+                }
+                p{
+                    font:{
+                        family: 'Lobster Two', cursive;
+                        size: 40px;
+                    }
+                }
+        }
+        .header_links{
+            span{
+                display: none;
+            }
+            justify-self: end;
+             ul{
+                list-style: none;
+                 display: inline-flex;
+
+                    li{
+                        padding: 0rem 2rem;
+                            a{
+                                padding-bottom: 0.5rem;
+                                color: $color-primary;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font:{
+                                    family: $font-primary;
+                                    size: 18px;
+                                    weight: 600;
+                                }
+                            } a:hover{
+                                border-bottom: 5px solid $color-secundary;
+                                transition: 250ms ease-in-out;
+                            }
+                    }                 
+                }
+            }
+         
+        }
+        .header_marcaLogo{
+            margin-top: 6rem;
+            text-align: center;
+            img{
+                width: 300px;
+            }
+        }
+    }
+
+.servicios{
+    .servicios_titulo{
+        margin: auto;
+        text-align: center;
+         h1{
+            margin: auto;
+             margin-top: 5rem;
+             text-transform: uppercase;
+             letter-spacing: 7px;
+             border: 1px solid $color-secundary;
+             border-radius: 25px 0px;
+             color: $color-bg;
+             padding: 1rem;
+             width: 30%;
+             background: $color-secundary;
+             font: {
+                 family: $font-primary;
+                 size: 40px;
+                 weight: 900;
+             }
+         }
+         p{
+             margin: auto;
+             margin-top: 4rem;
+             width: 47%;
+             letter-spacing: 2.5px;
+             font:{
+                 family: $font-primary;
+             }
+         }
+    }
+    .servicios_gridBeneficios{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.2fr 0.2fr 0.2fr; 
+        grid-template-rows: 0.2fr 0.5fr; 
+        gap: 100px 100px; 
+        justify-content: center;
+        margin: auto;
+        margin-top: 6rem;
+        text-align: center;
+        grid-template-areas: 
+          ". . ."
+          "servicios_descarga servicios_descarga servicios_descarga"
+          ". . ."
+          ". . ."; 
+          .servicios_descarga {
+              background: white;
+              grid-area: servicios_descarga;
+              width: 100%;
+              justify-self: center;
+              height: 300px;
+            //   box-shadow: 0px 0px 8px 0.5px  #44634d;
+              border: $border;      
+            .descarga_titulo{
+                margin-top: 2.5rem;
+                h1{
+                    text-align: center;
+                    font-family: $font-primary;
+                    color: rgba(0, 0, 0, 0.7);
+                    padding-bottom: 1.5rem;
+                }
+                p{
+                    padding:  1rem 5rem 2rem 5rem;
+                    font-family: $font-primary;
+                }
+            }
+            a{
+                text-align: center;
+                color: $color-primary;
+                border: 3px solid #7CCC90;
+                margin-top: 5rem;
+                padding: 0.8rem;
+                border-radius: $border-leaf;
+                color: white;
+                background: #7CCC90;
+                font-family: $font-primary;
+                box-shadow: 0px 3px 2px black;
+             text:{
+                 decoration: none;
+                 transform: uppercase;
+             }
+
+            } a:hover{
+                background: transparent;
+                color: black;
+                transition: all 500ms ease;
+            }
+    }
+    .cards{
+        border: 1px solid #dee0e0;
+        border-radius: $border-leaf;
+        background: white;
+        height: 300px;
+        width: 250px;
+        padding: 1rem;
+            span{
+                color: #7CCC90;
+                font-size: 30px;
+                border: 4px solid #7CCC90;
+                padding: 0.5rem;
+                border-radius: 20px 0px;
+                    i{
+
+                        margin-top: 1rem;
+                    }
+            }
+            h3 {
+                margin-top: 20px;
+                font:{
+                    family:'Rubik', sans-serif;
+                    weight: 400;
+                }
+            }
+            p{
+                margin-top: 1rem;
+                line-height: 22px;
+                font: {
+                    family: 'Poppins', sans-serif;
+                    size: 14px;
+                }
+            }
+    }
+    }
+    .servicios_gridBeneficiosDos{
+        display: grid;
+        grid-template-columns: 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 100px 100px; 
+        justify-content: center;
+        margin-top: -5rem;
+        text-align: center;
+        .cards{
+            border: 1px solid #dee0e0;
+            border-radius: $border-leaf;
+            background: white;
+            height: 300px;
+            width: 250px;
+            padding: 1rem;
+                span{
+                    color: #7CCC90;
+                    font-size: 30px;
+                    border: 4px solid #7CCC90;
+                    padding: 0.5rem;
+                    border-radius: 20px 0px;
+                        i{
+    
+                            margin-top: 1rem;
+                        }
+                }
+                h3 {
+                    margin-top: 20px;
+                    font:{
+                        family:'Rubik', sans-serif;
+                        weight: 400;
+                    }
+                }
+                p{
+                    margin-top: 1rem;
+                    line-height: 22px;
+                    font: {
+                        family: 'Poppins', sans-serif;
+                        size: 14px;
+                    }
+                }
+        }
+    }
+    
+    }
+    footer{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1.7fr; 
+        gap: 0px 0px;
+        height: 70vh;
+        width: 100%;
+        background: #28422F;
+        margin-top: 7rem;
+        box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.5);
+        justify-items: center;
+        .footer_form{
+            width: 100%;
+                iframe{
+                    width: 99.9900%;
+                }
+        }
+        .footer_inputs{
+            text-align: center;
+        }
+            h3{
+                margin-left: 1rem;
+                margin-top: 1rem;
+                color: white;
+                letter-spacing: 5px;
+                font-family:'Rubik', sans-serif;
+            }
+            input{
+                width: 14rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                outline: none;
+                outline-width: 1rem;
+                padding: 10px;
+                border: 1px solid #7CCC90;
+                transition: 0.7s ease;
+
+            } input:focus{
+                border-radius: 15px 0px;
+                transition: 0.7s ease;
+            }
+            select{
+                width: 15.5rem;
+                padding: 10px;
+                margin-left: 1rem;
+                border-color: #7CCC90;
+            } select:focus{
+                border-radius: $border-leaf;
+                transition: 0.7s ease;
+            }
+            .footer_check{
+                margin-left: -6.5rem;
+               
+                label{
+                    color: white;
+                    margin-left: -6.5rem;
+                }
+            }
+            textarea{
+                width: 30.2rem;
+                margin-left: 15px;
+                margin-top: 1rem;
+                padding: 1rem;
+                border: 1px solid $color-secundary;
+                outline: none;
+                font-family: $font-primary;
+                text-transform: uppercase;
+                resize: none;
+            } textarea:focus{
+                transition: 0.7s ease;
+                border-radius: $border-leaf;
+            }
+            button{
+                text-transform: uppercase;
+                font-family: 'Rubik', sans-serif;
+                background: #3CC25E;
+                border:3px solid #3CC25E;
+                border-radius: 30px 0px;
+                font-weight: 800;
+                letter-spacing: 3px;
+                margin-top: 1rem;
+                padding: 1rem;
+                width: 32.5rem;
+                margin-left: 15px;
+                cursor: pointer;
+            } button:hover{
+                background: #7CCC90;
+                border: 3px solid #7CCC90;
+                transition: all 500ms ease-in-out;
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+body{
+    width: 143.5vh;
+    header{
+        width: 100%;
+        .header_navBar{
+            .header_Llive{
+                img{
+                    display: none;
+                }
+                p{
+                    font-size: 58px;
+                }
+            }
+            .header_links{
+               ul{
+                   li{
+                       a{
+                       font-size: 28px;
+                       }
+                   }
+               }
+            }
+        }
+    }
+    .servicios{
+        .servicios_gridBeneficios, .servicios_gridBeneficiosDos{
+            .cards{
+                h3{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .servicios_titulo{
+        p{
+            display: none;
+        }
+    }
+    footer{
+        height: 80vh;
+    }
+}
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){ 
+    body{
+        width: 123.5vh;
+        header{
+            width: 100%;
+        }
+        .servicios_titulo{
+            p{
+                display: none;
+            }
+        }
+        footer{
+            height: 80vh;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    body{
+        width: 123.5vh;
+        header{
+            width: 100%;
+        }
+        .servicios_titulo{
+            p{
+                display: none;
+            }
+        }
+        footer{
+            height: 80vh;
+        }
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1270px){
+    body{
+        width: 146.5vh;
+        header{
+            width: 100%;
+        }
+        .servicios_titulo{
+            p{
+                display: block;
+            }
+        }
+        footer{
+            height: 83vh;
+        }
+    }
+}
+
+

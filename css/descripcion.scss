@@ -1,0 +1,508 @@
+$primary: #ff0000;
+
+$theme-colors: (
+  "primary":    $primary,
+);
+
+$color-bg: #f9fbfb;
+$border:  1px solid #dee0e0;
+$border-leaf: 15px 0px;
+
+$color-primary: #000;
+$color-secundary: #7CCC90;
+
+$font-primary: 'Rubik', sans-serif;
+$box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.5);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $color-bg;
+    height: 200vh;
+        header{
+            width: 100%;
+            height: 100vh;
+            box-shadow: $box-shadow;
+            height: 100vh;
+            background:{
+                image: url(../assets/banner-hojas.jpg);
+                size: cover;
+                position: center;
+            }
+            .header_navBar{
+                display: grid; 
+                grid-template-columns: 0.3fr 0.7fr; 
+                grid-template-rows: 0.2fr; 
+                gap: 0px 0px; 
+                align-items: center; 
+                padding-top: 0.8rem;      
+            .header_logo{
+                 display: grid; 
+                 grid-template-columns: 0.2fr 0.4fr; 
+                 grid-template-rows: 0.2fr; 
+                 gap: 0px 20px;
+                 align-items: center;
+                 margin-left: 3rem;
+                    img{
+                        width: 80px;
+                    }
+                    p{
+                        font:{
+                            family: 'Lobster Two', cursive;
+                            size: 40px;
+                        }
+                    }
+            }
+            .header_links{
+                justify-self: end;
+                 ul{
+                     display: inline-flex;
+                     list-style: none;
+                        li{
+                            padding: 0rem 2rem;
+                                a{
+                                    padding-bottom: 0.5rem;
+                                    color: $color-primary;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    font:{
+                                        family: $font-primary;
+                                        size: 18px;
+                                        weight: 600;
+                                    }
+                                } a:hover{
+                                    border-bottom: 5px solid $color-secundary;
+                                    transition: 250ms ease-in-out;
+                                }
+                        }                 
+                    }
+                }
+             
+            }
+            .header_titulo{
+                text-align: center;
+                
+                    h1{
+                        color: #2b2a2a;
+                        margin-top: 8rem;
+                        text-transform: uppercase;
+                        font:{
+                            family:$font-primary;
+                            size: 48px;
+                            weight: 500;
+                        }
+                    }
+                    p{
+                        margin-top: 1rem;
+                        margin-bottom: 4rem;
+                        color: $color-primary;
+                        font:{
+                            size: 20px;
+                            family:'Rubik', sans-serif;
+                            weight: 500;                            
+                        }
+                    }
+                    a{
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: black;
+                        background: #3CC25E;
+                        border: 3px solid #3CC25E;
+                        text-decoration: none;
+                        padding: 15px 15px;
+                        border-radius: 25px 0px;
+                        font-family:'Rubik', sans-serif;
+                        font-weight: 700;
+                    } a:hover{
+                        background: #7CCC90;
+                        border: 3px solid #7CCC90;
+                        transition: 300ms ease-out;
+                    }
+            } 
+           
+        }
+        .descripcion{
+                     h1{
+                        text-align: center;
+                        margin-top: 4rem;
+                        text-transform: uppercase;
+                        font:{
+                            family: $font-primary;
+                            weight:300;
+                        }
+                    }
+                    .estilos_cards{
+                        background: white;
+                        border: $border;
+                        text-align: center;
+                        padding: 1rem;
+                        transition: all 300ms ease-in-out;
+                        img{
+                            display: block;
+                            margin: auto;
+                            margin-top: 1rem;
+                            width: 150px;
+                            height: 200px;
+                            padding-bottom: 25px;
+                        }
+                    } .estilos_cards:hover{
+                    border: 3px solid #6caf7d;
+                    background: $color-secundary;
+                    transition: all 300ms ease-in-out;
+                    cursor: default;
+                    border-radius: 60px 0px;
+                    }
+            }
+            .descripcion_gridConservas{
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr;
+                grid-template-rows: 0.5fr 0.5fr;
+                gap: 100px 100px;
+                justify-content: center;
+                margin-top: 5rem;
+                
+                   
+            }
+            .descripcion_gridVinos{
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr;
+                grid-template-rows: 1fr;
+                gap: 0px 100px;
+                justify-content: center;
+                margin-top: 5rem;
+            }
+            .descripcion_gridNuevos{
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr 0.2fr;
+                grid-template-rows: 1fr;
+                gap: 0px 100px;
+                justify-content: center;
+                margin-top: 5rem;
+                padding-bottom: 5rem;
+
+            }
+            footer{
+                display: grid; 
+                grid-auto-columns: 1fr; 
+                grid-template-columns: 1fr; 
+                grid-template-rows: 1.7fr; 
+                gap: 0px 0px;
+                height: 80vh;
+                width: 100%;
+                background: #28422F;
+                margin-top: 7rem;
+                box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.5);
+                justify-items: center;
+                iframe{
+                    width: 118.7rem;
+                }
+                .footer_inputs{
+                    text-align: center;
+                }
+                    h3{
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                        color: white;
+                        letter-spacing: 5px;
+                        font-family:'Rubik', sans-serif;
+                    }
+                    input{
+                        width: 14.9rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        outline: none;
+                        outline-width: 1rem;
+                        padding: 10px;
+                        border: 1px solid #7CCC90;
+
+                    } input:focus{
+                        border-radius: 15px 0px;
+                        transition: 0.7s ease;
+                    }
+                    select{
+                        width: 15rem;
+                        padding: 10px;
+                        margin-left: 1rem;
+                        border-color: #7CCC90;
+                    } select:focus{
+                        border-radius: 15px 0px;
+                        transition: 0.7s ease;
+                    }
+                    .footer_check{
+                        margin-left: -6.5rem;
+                       
+                        label{
+                            color: white;
+                            margin-left: -6.5rem;
+                        }
+                    }
+                    textarea{
+                        width: 31.2rem;
+                        margin-left: 15px;
+                        margin-top: 1rem;
+                        padding: 1rem;
+                        height: 150px;
+                        border: 1px solid $color-secundary;
+                        outline: none;  
+                        font-family: $font-primary;
+                        text-transform: uppercase;
+                        resize: none;
+                    } textarea:focus{
+                        border-radius: 15px 0px;
+                        transition: 0.7s ease;
+                    }
+                    button{
+                        text-transform: uppercase;
+                        font-family: 'Rubik', sans-serif;
+                        background: #3CC25E;
+                        border:3px solid #3CC25E;
+                        border-radius: 30px 0px;
+                        font-weight: 800;
+                        letter-spacing: 3px;
+                        margin-top: 1rem;
+                        padding: 1rem;
+                        width: 32.5rem;
+                        margin-left: 15px;
+                        cursor: pointer;
+                    } button:hover{
+                        background: #7CCC90;
+                        border: 3px solid #7CCC90;
+                        transition: all 500ms ease-in-out;
+                    }
+            }
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    body{
+        width: 225vh;
+        header{
+            width: 225vh;
+            height: 150vh;
+            .header_navBar{
+                .header_logo{
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 80px;
+                    }
+                }
+                .header_links{
+                    ul{
+                        li{
+                            a{
+                                font-size: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+           
+            .header_titulo{
+                margin-top: 15rem;
+                h1{
+                    font-size: 80px;
+                }
+                p{
+                    font-size: 50px
+                }
+                a{
+                    font-size: 50px;
+                    font-weight: 300;
+                }
+            }
+            
+        }
+        .descripcion{
+            h1{
+                font-size: 60px;
+            }
+            h5{
+                font-size: 48px;
+            }
+            p{
+                font-size: 38px;
+            }
+            a{
+                font-size: 50px;
+                padding: 15px;
+            }
+            .descripcion_gridConservas{
+                display: grid;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            .descripcion_gridVinos{
+                display: grid;
+                gap: 100px 0px;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .descripcion_gridNuevos{
+                display: grid;
+                gap: 100px 0px;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
+    body{
+        width: 225vh;
+        header{
+            width: 225vh;
+            height: 150vh;
+            .header_navBar{
+                .header_logo{
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 80px;
+                    }
+                }
+                .header_links{
+                    ul{
+                        li{
+                            a{
+                                font-size: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+           
+            .header_titulo{
+                margin-top: 15rem;
+                h1{
+                    font-size: 80px;
+                }
+                p{
+                    font-size: 50px
+                }
+                a{
+                    font-size: 50px;
+                    font-weight: 300;
+                }
+            }
+            
+        }
+        .descripcion{
+            h1{
+                font-size: 60px;
+            }
+            h5{
+                font-size: 48px;
+            }
+            p{
+                font-size: 38px;
+            }
+            a{
+                font-size: 50px;
+                padding: 15px;
+            }
+            .descripcion_gridConservas{
+                display: grid;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            .descripcion_gridVinos{
+                display: grid;
+                gap: 100px 0px;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .descripcion_gridNuevos{
+                display: grid;
+                gap: 100px 0px;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        }
+    }
+ }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1240px){
+    body{
+        width: 225vh;
+        header{
+            width: 225vh;
+            .header_navBar{
+                .header_logo{
+                    img{
+                        width: 150px;
+                    }
+                    p{
+                        font-size: 80px;
+                    }
+                }
+                .header_links{
+                    ul{
+                        li{
+                            a{
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header_titulo{
+                h1{
+                    font-size: 70px;
+                }
+                p{
+                    font-size: 35px;
+                }
+                a{
+                    font-size: 23px;
+                }
+            }
+        }
+        .descripcion{
+            h1{
+                font-size: 45px;
+            }
+            h5{
+                font-size: 48px;
+            }
+            p{
+                font-size: 28px;
+            }
+            a{
+                font-size: 28px;
+            }
+            .descripcion_gridConservas{
+                display: grid;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap:  100px 100px;
+
+            }
+            .descripcion_gridVinos{
+                display: grid;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr;
+                gap:  100px 100px;
+            }
+            .descripcion_gridNuevos{
+                display: grid;
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap:  100px 100px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1240px) and (max-width: 1639px) {
+    body{
+        width: 225vh;
+    }
+}

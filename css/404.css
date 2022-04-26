@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(../assets/5313213.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .titulo {
+  position: absolute;
+  top: -3rem;
+  left: 27rem;
+}
+
+body .titulo h1 {
+  font-size: 250px;
+  font-family: 'Nunito', sans-serif;
+  color: #33662e;
+  text-shadow: 1px 30px 50px black;
+}
+
+body .titulo p {
+  position: relative;
+  top: -2.5rem;
+  right: 10rem;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+body ul {
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+body ul li {
+  margin-top: 2rem;
+}
+
+body ul a {
+  color: white;
+  background: #7CCC90;
+  text-decoration: none;
+  margin-bottom: 5rem;
+  padding: 20px 100px;
+  border: 4px solid #7CCC90;
+  border-radius: 25px 0px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Nunito', sans-serif;
+}
+/*# sourceMappingURL=404.css.map */
